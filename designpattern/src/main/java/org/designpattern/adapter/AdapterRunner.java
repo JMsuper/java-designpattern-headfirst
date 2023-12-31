@@ -6,7 +6,8 @@ import java.util.List;
 
 public class AdapterRunner {
     public static void main(String[] args) {
-        ArrayList<Integer> integerList = new ArrayList<>(List.of(new Integer[]{1, 2, 3, 4, 5}));
+        Integer[] intArray = {1,2,3,4,5};
+        ArrayList<Integer> integerList = new ArrayList<>(List.of(intArray));
 
         {
             Enumeration<Integer> enumeration = new EnumerationImpl<Integer>(integerList);
