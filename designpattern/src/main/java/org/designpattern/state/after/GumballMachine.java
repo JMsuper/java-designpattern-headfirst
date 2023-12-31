@@ -83,4 +83,8 @@ public class GumballMachine {
     public int getCount() {
         return count;
     }
+
+    public State getState() {
+        return state;
+    }
 }
