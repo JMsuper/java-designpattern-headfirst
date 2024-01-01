@@ -1,3 +1,10 @@
+정의 : 알고리즘군을 정의하고 각각을 캡슐화(인터페이스화)하여,  교환해서 사용할 수 있도록 만든다. 클라이언트는 아래 QuackBehavior , FlyBehavior를 멤버 변수로 두고, 구현 알고리즘을 자유롭게 변경가능하다.
 
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/740f1348-367c-4cd4-83e2-3d81a605513c/47c8d703-e560-4ed3-8e20-93a28bfecfcb/Untitled.png)
 
-<image src = "https://private-user-images.githubusercontent.com/80041449/293571052-8ded39e2-c508-438a-8bf8-3594e63c0ef0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQwOTAyNTQsIm5iZiI6MTcwNDA4OTk1NCwicGF0aCI6Ii84MDA0MTQ0OS8yOTM1NzEwNTItOGRlZDM5ZTItYzUwOC00MzhhLThiZjgtMzU5NGU2M2MwZWYwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTAxVDA2MTkxNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTM5YTEyYWI1OGE0YjQ4MmE0YTgzMjcxYTMzZjUxOWY2NWU3ZmQ3ZGMxZDI0YWVjNDY5ODVlYmVhYWYzYzE1MGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.yoDUWQ0VOHSgxY6o6kKO5Oa77dgrrrmbjNSF2nNU3AA">
+- 얻는 것
+    - 알고리즘을 사용하는 클라이언트와는 독립적으로 알고리즘을 변경할 수 있다.
+    - 즉, 새로운 전략을 추가해도 기존 코드를 변경하지 않는다.
+- 잃는 것
+    - 사용자(인터페이스를 멤버변수로 선언한 클래스)는 내부 알고리즘이 어떻게 동작하는지 알지 못한다.
+    - 사용자는 전략 인터페이스에 대한 구현체에 대해 알고 있어야 한다.
